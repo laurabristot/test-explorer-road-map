@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.explorer {
+  position: absolute;
+  transform: translatey(350px);
+}
+
+.cabeca {
+  position: relative;
+  animation: girar 2s ease-in infinite;
+}
+
+.corpo {
+  position: absolute;
+}
+
+.montanha {
+  position: absolute;
+  left: 0;
+}
+
+.jr,
+.pleno,
+.senior {
+  transition: all 1s ease-in-out;
+}
+
+.jr {
+  transform: translateY(350px);
+}
+
+.pleno {
+  transform: translateY(50px) translateX(400px) scale(0.6);
+}
+
+.senior {
+  transform: translatey(-350px) translateX(300px) scale(0.4);
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg) translatey(2px);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100& {
+    transform: rotate(0deg);
+  }
+}
